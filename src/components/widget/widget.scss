@@ -1,0 +1,40 @@
+.widget {
+  flex: 0.2;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: fit-content;
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  hr {
+    color: rgb(143, 140, 140);
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    img {
+      margin-top: 5px;
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+      border-radius: 5px;
+    }
+    h5 {
+      margin-bottom: 5px;
+      text-transform: capitalize;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    p {
+      margin: 0;
+      font-size: 12px;
+      color: gray;
+    }
+  }
+}

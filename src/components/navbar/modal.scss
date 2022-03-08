@@ -1,0 +1,110 @@
+.ReactModal__Overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  .ReactModal__Content {
+    position: static !important;
+    width: 70%;
+    height: 80%;
+    overflow: scroll;
+
+    .modal__body {
+      padding: 10px;
+      &__link {
+        width: 100%;
+        display: flex;
+        text-transform: capitalize;
+        border-bottom: 1px solid rgb(207, 205, 205);
+        margin-bottom: 15px;
+        h4 {
+          margin-right: 20px;
+          font-weight: 700;
+          color: gray;
+        }
+      }
+
+      &__info {
+        display: flex;
+        margin: 20px 0;
+        &__user {
+          margin-right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .avatar {
+            margin-right: 10px;
+          }
+          p {
+            margin: 0;
+            margin-right: 10px;
+            font-weight: 500;
+            font-size: 15px;
+          }
+        }
+
+        &__share {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(207, 205, 205);
+          padding: 5px 10px;
+          border-radius: 30px;
+          P {
+            margin: 0;
+            margin: 0 3px;
+          }
+        }
+      }
+
+      &__field {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        &__link {
+          color: rgb(102, 101, 101);
+          display: flex;
+          align-items: flex-start;
+          margin-top: 15px;
+          height: 200px;
+          border-bottom: 1px solid rgb(207, 205, 205);
+          input {
+            flex: 1;
+            margin-left: 10px;
+            outline: none;
+            border: none;
+
+            &::placeholder {
+              color: rgb(146, 143, 143) !important;
+            }
+          }
+        }
+      }
+      .modal__btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        button {
+          border: none;
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-weight: 600;
+          font-size: 13px;
+          background-color: #404091;
+          &:nth-child(2) {
+            background-color: #b92b27;
+          }
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

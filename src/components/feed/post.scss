@@ -1,0 +1,103 @@
+@import "../../base";
+.post {
+  background-color: white;
+  border-radius: 7px;
+  margin: 12px 0;
+  padding: 10px;
+  &__info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    p {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    small {
+      align-self: flex-start;
+      color: gray;
+      margin-left: 10px;
+    }
+  }
+  &__body {
+    &__question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      p {
+        margin: 0;
+        font-weight: 600;
+        font-size: 17px;
+      }
+      .answer__btn {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        background-color: rgb(64, 64, 145);
+        &:hover {
+          background-color: #313183;
+        }
+      }
+    }
+
+    &__answer {
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    &__action {
+      flex: 0.2;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: $bg__color;
+      padding: 5px 0;
+      border-radius: 8px;
+      //   width: 150px;
+      .css-i4bv87-MuiSvgIcon-root {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    &__shere {
+      flex: 0.6;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .css-i4bv87-MuiSvgIcon-root {
+        font-size: 20px;
+        width: 50px;
+        cursor: pointer;
+      }
+    }
+    &__left {
+      flex: 0.2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .css-i4bv87-MuiSvgIcon-root {
+        font-size: 20px;
+        width: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+}

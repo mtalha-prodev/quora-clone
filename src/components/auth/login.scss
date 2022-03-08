@@ -1,0 +1,181 @@
+.login {
+  background-image: url("https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  &__content {
+    width: 650px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    img {
+      width: 200px;
+      height: auto;
+      margin: 20px 0 10px 0;
+    }
+    p {
+      font-size: 13px;
+      color: rgb(100, 100, 100);
+      font-weight: 700;
+      text-align: center;
+    }
+    h4 {
+      color: royalblue;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-style: oblique;
+      font-size: 20px;
+    }
+
+    &__body {
+      display: flex;
+      margin: 30px 0;
+
+      &__left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .sign__btn {
+          border: 1px solid rgb(184, 181, 181);
+          margin: 10px 0;
+          font-size: 14px;
+          color: gray;
+          text-transform: capitalize;
+          display: flex;
+          justify-content: start;
+          &:nth-child(1) {
+            padding: 0px;
+          }
+          .g__icon {
+            width: 35px;
+            height: 35px;
+            margin: 0;
+            margin-right: 8px;
+          }
+          .f__icon {
+            width: 25px;
+            height: 25px;
+            margin: 0;
+            margin-right: 10px;
+          }
+        }
+
+        .sign__email {
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: lowercase;
+          color: gray;
+        }
+        hr {
+          margin: 0.5rem 0;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          color: gray;
+        }
+      }
+
+      &__right {
+        flex: 1;
+        margin-left: 10px;
+        border-left: 1px solid rgb(189, 186, 186);
+        form {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-left: 10px;
+          h5 {
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+          }
+          hr {
+            margin: 0.2rem 0;
+          }
+          label {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(49, 49, 49);
+          }
+          input {
+            margin-top: 5px;
+            padding: 7px;
+            font-size: 13px;
+            border: 1px solid rgb(167, 163, 163);
+            border-radius: 5px;
+            &:focus {
+              // border: 1px solid royalblue;
+              outline: none;
+              box-shadow: 0px 0 6px gray;
+            }
+          }
+          button {
+            font-weight: 600;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    &__footer {
+      p {
+        color: royalblue;
+        font-weight: 400;
+        font-size: 13px;
+        span {
+          color: rgb(32, 31, 31);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .login {
+    &__content {
+      width: 500px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .login {
+    height: 100%;
+    &__content {
+      width: 400px;
+      margin: 30px 0px;
+      &__body {
+        flex-direction: column-reverse;
+        &__right {
+          margin: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .login {
+    &__content {
+      width: 100%;
+      margin: 30px 0px;
+      &__body {
+        &__right {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

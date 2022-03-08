@@ -1,0 +1,33 @@
+.feed {
+  margin: 0 20px;
+  flex: 0.6;
+  &__box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(236, 236, 236);
+    &:hover {
+      border: 1px solid rgb(207, 204, 204);
+    }
+    &__detail {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      p {
+        margin: 0;
+        margin-left: 10px;
+        text-transform: uppercase;
+        color: gray;
+        font-size: 14px;
+      }
+    }
+    &__question {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 5px;
+      color: gray;
+    }
+  }
+}

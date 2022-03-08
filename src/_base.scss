@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$border__color: white;
+$text__color: rgb(119, 118, 118);
+$bg__color: rgb(241, 241, 241);
+body {
+  background-attachment: fixed;
+  background-color: $bg__color;
+}
